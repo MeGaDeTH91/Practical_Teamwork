@@ -6,14 +6,14 @@ function startApp() {
     $("#linkHome").click(showHomeView);
     $("#linkLogin").click(showLoginView);
     $("#linkRegister").click(showRegisterView);
-	$("#linkListAds").click(listAdverts);
+    $("#linkListAds").click(listAdverts);
     $("#linkLogout").click(logoutUser);
 
     // Bind the form submit buttons
     $("#buttonLoginUser").click(loginUser);
     $("#buttonRegisterUser").click(registerUser);
-	
-	const kinveyBaseUrl = "https://mock.api.com/";
+
+    const kinveyBaseUrl = "https://mock.api.com/";
     const kinveyAppKey = "kid_rk";
     const kinveyAppSecret = "736804a668";
 
@@ -29,13 +29,13 @@ function startApp() {
             // No logged in user
             $("#linkLogin").show();
             $("#linkRegister").show();
-			$("#linkListAds").hide();
+            $("#linkListAds").hide();
             $("#linkLogout").hide();
         } else {
             // We have logged in user
             $("#linkLogin").hide();
             $("#linkRegister").hide();
-			$("#linkListAds").show();
+            $("#linkListAds").show();
             $("#linkLogout").show();
         }
     }
@@ -122,7 +122,6 @@ function startApp() {
         showHideMenuLinks();
         showHomeView();
     }
-}
 
     // advertisement/all
     function listAdverts() {
@@ -166,4 +165,3 @@ function startApp() {
         }
     }
 }
-
